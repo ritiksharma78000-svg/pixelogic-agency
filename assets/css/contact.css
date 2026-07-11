@@ -1,0 +1,32 @@
+/* Force Contact Button */
+
+.contact-form button,
+.contact-form .btn-primary{
+
+    display:block !important;
+
+    width:100% !important;
+
+    background:#2563EB !important;
+
+    color:#fff !important;
+
+    padding:16px 20px !important;
+
+    border:none !important;
+
+    border-radius:12px !important;
+
+    font-size:16px !important;
+
+    font-weight:600 !important;
+
+    cursor:pointer !important;
+
+    margin-top:20px !important;
+
+    visibility:visible !important;
+
+    opacity:1 !important;
+
+}

@@ -1315,10 +1315,9 @@ ul {
             display: none;
         }
 
-        .btn-primary {
-
-            display: none;
-        }
+        .navbar > .btn-primary{
+        display:none;
+    }
 
         .menu-toggle {
 
@@ -2075,7 +2074,7 @@ height:40px;
     height:42px;
 }
 
-.btn-primary{
+.navbar > .btn-primary{
     display:none;
 }
 

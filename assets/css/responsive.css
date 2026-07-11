@@ -2,195 +2,144 @@
         TABLET
 ================================= */
 
-@media (max-width:992px){
+@media (max-width:992px) {
 
-.container{
-    width:92%;
-}
+    .container {
+        width: 92%;
+    }
 
-.hero-container,
-.contact-wrapper{
-    grid-template-columns:1fr;
-    display:grid;
-    gap:40px;
-}
+    .hero-container,
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        display: grid;
+        gap: 40px;
+    }
 
-.services-grid,
-.features-grid,
-.process-grid,
-.pricing-grid,
-.stats-grid,
-.portfolio-grid,
-.footer-grid{
-    grid-template-columns:repeat(2,1fr);
-}
+    .services-grid,
+    .features-grid,
+    .process-grid,
+    .pricing-grid,
+    .stats-grid,
+    .portfolio-grid,
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-.hero-content{
-    text-align:center;
-}
+    .hero-content {
+        text-align: center;
+    }
 
-.hero-buttons,
-.hero-stats{
-    justify-content:center;
-    flex-wrap:wrap;
-}
+    .hero-buttons,
+    .hero-stats {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 
-.hero-image img{
-    max-width:500px;
-}
+    .hero-image img {
+        max-width: 500px;
+    }
 
-.section-title h2{
-    font-size:36px;
-}
+    .section-title h2 {
+        font-size: 36px;
+    }
 
-.hero-content h1{
-    font-size:46px;
-}
-
-}
-
-
-/* ===============================
-        MOBILE
-================================= */
-
-@media (max-width:768px){
-
-.container{
-    width:94%;
-}
-
-.navbar{
-    min-height:70px;
-}
-
-.menu-toggle{
-    display:block;
-    font-size:30px;
-    cursor:pointer;
-}
-
-.btn-primary{
-    display:none;
-}
-
-.nav-links{
-    position:absolute;
-    top:70px;
-    left:0;
-    width:100%;
-    background:#fff;
-
-    display:none;
-    flex-direction:column;
-    align-items:center;
-
-    padding:25px 0;
-    gap:20px;
-
-    box-shadow:0 10px 20px rgba(0,0,0,.08);
-}
-
-.nav-links.active{
-    display:flex;
-}
-
-.hero{
-    padding:110px 0 70px;
-}
-
-.hero-container{
-    display:flex;
-    flex-direction:column-reverse;
-    text-align:center;
-}
-
-.hero-content h1{
-    font-size:34px;
-}
-
-.hero-content p{
-    font-size:16px;
-}
-
-.hero-buttons{
-    flex-direction:column;
-}
-
-.hero-buttons a{
-    width:100%;
-}
-
-.hero-image img{
-    max-width:100%;
-}
-
-.services-grid,
-.features-grid,
-.process-grid,
-.portfolio-grid,
-.pricing-grid,
-.stats-grid,
-.footer-grid{
-    grid-template-columns:1fr;
-}
-
-.contact-wrapper{
-    display:block;
-}
-
-.contact-info{
-    margin-top:30px;
-}
-
-.section-title h2{
-    font-size:30px;
-}
-
-.portfolio-buttons{
-    flex-direction:column;
-}
-
-.pricing-card{
-    min-height:auto;
-}
-
-.stat-card h3{
-    font-size:40px;
-}
-
-.footer{
-    text-align:center;
-}
+    .hero-content h1 {
+        font-size: 46px;
+    }
 
 }
 
+
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
+
+@media (max-width:768px) {
+
+    .hero {
+        padding: 110px 0 70px;
+    }
+
+    .hero-container {
+        flex-direction: column-reverse;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .hero-content,
+    .hero-image {
+        width: 100%;
+        flex: unset;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 17px;
+        margin: auto auto 30px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 420px;
+        margin: auto;
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .navbar {
+        min-height: 75px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .navbar>.btn-primary {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+}
 
 /* ===============================
       SMALL MOBILE
 ================================= */
 
-@media (max-width:480px){
+@media (max-width:480px) {
 
-.hero-content h1{
-    font-size:28px;
-}
+    .hero-content h1 {
+        font-size: 28px;
+    }
 
-.section-title h2{
-    font-size:26px;
-}
+    .section-title h2 {
+        font-size: 26px;
+    }
 
-.hero-stats{
-    gap:25px;
-}
+    .hero-stats {
+        gap: 25px;
+    }
 
-.logo span{
-    font-size:20px;
-}
+    .logo span {
+        font-size: 20px;
+    }
 
-.logo-img{
-    width:38px;
-    height:38px;
-}
+    .logo-img {
+        width: 38px;
+        height: 38px;
+    }
 
 }

@@ -1,0 +1,123 @@
+/* ==========================================
+            PORTFOLIO
+========================================== */
+
+.portfolio{
+    padding:100px 0;
+    background:#f8fafc;
+}
+
+.portfolio-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.portfolio-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.portfolio-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(37,99,235,.18);
+}
+
+.portfolio-card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.portfolio-content{
+    padding:25px;
+}
+
+.portfolio-content h3{
+    margin-bottom:12px;
+    color:#111827;
+}
+
+.portfolio-content p{
+    color:#6b7280;
+    margin-bottom:20px;
+    line-height:1.6;
+}
+
+.portfolio-buttons{
+    display:flex;
+    gap:12px;
+}
+
+.btn-primary,
+.btn-secondary{
+    flex:1;
+    text-align:center;
+    padding:12px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#2563EB;
+    color:#fff;
+}
+
+.btn-primary:hover{
+    background:#1d4ed8;
+}
+
+.btn-secondary{
+    border:2px solid #2563EB;
+    color:#2563EB;
+}
+
+.btn-secondary:hover{
+    background:#2563EB;
+    color:#fff;
+}
+/* Portfolio Tags */
+
+.portfolio-tags{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+    margin:15px 0;
+}
+
+.portfolio-tags span{
+    background:#eff6ff;
+    color:#2563EB;
+    font-size:13px;
+    font-weight:600;
+    padding:6px 12px;
+    border-radius:50px;
+}
+.portfolio-category{
+    display:inline-block;
+    background:#2563EB;
+    color:#fff;
+    padding:6px 14px;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+.portfolio-image{
+    overflow:hidden;
+}
+
+.portfolio-image img{
+    width:100%;
+    transition:.5s;
+}
+
+.portfolio-card:hover img{
+    transform:scale(1.08);
+}

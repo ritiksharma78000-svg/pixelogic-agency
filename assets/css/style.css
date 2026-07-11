@@ -1526,13 +1526,6 @@ ul {
 
 }
 
-@keyframes spin{
-
-    to{
-        transform:rotate(360deg);
-    }
-
-}
 /* ==========================================
         FORM LOADING SPINNER
 ========================================== */
@@ -1549,31 +1542,6 @@ ul {
 
 }
 
-.spinner{
-
-    width:18px;
-
-    height:18px;
-
-    border:2px solid rgba(255,255,255,.35);
-
-    border-top:2px solid #ffffff;
-
-    border-radius:50%;
-
-    animation:spin .8s linear infinite;
-
-}
-
-@keyframes spin{
-
-    to{
-
-        transform:rotate(360deg);
-
-    }
-
-}
 /* ===========================
       BUTTON LOADING
 =========================== */
@@ -2078,6 +2046,431 @@ width:40px;
 
 height:40px;
 
+}
+
+}
+/* ==========================================
+        PIXELOGIC RESPONSIVE V2.0
+        PART 1
+========================================== */
+
+@media (max-width:992px){
+
+.container{
+    width:92%;
+}
+
+/* ================= HEADER ================= */
+
+.navbar{
+    min-height:70px;
+}
+
+.logo{
+    font-size:22px;
+}
+
+.logo-img{
+    width:42px;
+    height:42px;
+}
+
+.btn-primary{
+    display:none;
+}
+
+.menu-toggle{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:45px;
+    height:45px;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* ================= MOBILE MENU ================= */
+
+.nav-links{
+
+    position:fixed;
+
+    top:70px;
+
+    left:-100%;
+
+    width:100%;
+
+    height:calc(100vh - 70px);
+
+    background:#fff;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:28px;
+
+    transition:.4s;
+
+    z-index:999;
+
+}
+
+.nav-links.active{
+
+    left:0;
+
+}
+
+.nav-links a{
+
+    font-size:22px;
+
+    font-weight:600;
+
+}
+
+/* ================= HERO ================= */
+
+.hero{
+
+    padding:110px 0 70px;
+
+}
+
+.hero-container{
+
+    flex-direction:column-reverse;
+
+    text-align:center;
+
+    gap:50px;
+
+}
+
+.hero-content{
+
+    width:100%;
+
+}
+
+.hero-content h1{
+
+    font-size:38px;
+
+    line-height:1.3;
+
+}
+
+.hero-content p{
+
+    font-size:16px;
+
+    max-width:100%;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+.hero-buttons a{
+
+    width:220px;
+
+    text-align:center;
+
+}
+
+.hero-image{
+
+    width:100%;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:450px;
+
+    margin:auto;
+
+}
+
+.hero-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+    margin-top:35px;
+
+}
+
+.stat h3{
+
+    font-size:24px;
+
+}
+
+.stat p{
+
+    font-size:14px;
+
+}
+
+/* ================= SERVICES ================= */
+
+.services{
+
+    padding:80px 0;
+
+}
+
+.services-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.service-card{
+
+    padding:35px 25px;
+
+}
+
+/* ================= FEATURES ================= */
+
+.features{
+
+    padding:80px 0;
+
+}
+
+.features-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.feature-card{
+
+    padding:35px 25px;
+
+}
+
+/* ================= SECTION TITLE ================= */
+
+.section-title h2{
+
+    font-size:34px;
+
+}
+
+.section-title p{
+
+    font-size:15px;
+
+}
+
+}
+
+@media (max-width:992px){
+
+.portfolio{
+    padding:80px 0;
+}
+
+.portfolio-grid{
+    grid-template-columns:1fr;
+    gap:25px;
+}
+
+.portfolio-card img{
+    height:auto;
+}
+
+.portfolio-buttons{
+    flex-direction:column;
+}
+
+.portfolio-buttons a{
+    width:100%;
+}
+
+/* ========= Process ========= */
+
+.process{
+    padding:80px 0;
+}
+
+.process-grid{
+    grid-template-columns:1fr;
+}
+
+/* ========= Pricing ========= */
+
+.pricing{
+    padding:80px 0;
+}
+
+.pricing-grid{
+    grid-template-columns:1fr;
+    gap:30px;
+}
+
+.pricing-card{
+    min-height:auto;
+}
+
+.popular{
+    transform:none;
+}
+
+.popular:hover{
+    transform:translateY(-10px);
+}
+
+/* ========= Stats ========= */
+
+.stats{
+    padding:80px 0;
+}
+
+.stats-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.stat-card h3{
+    font-size:42px;
+}
+
+/* ========= Testimonials ========= */
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:25px;
+}
+
+/* ========= Contact ========= */
+
+.contact{
+    padding:80px 0;
+}
+
+.contact-wrapper{
+    grid-template-columns:1fr;
+    gap:35px;
+}
+
+.contact-form{
+    padding:25px;
+}
+
+.contact-info{
+    width:100%;
+}
+
+/* ========= FAQ ========= */
+
+.faq{
+    padding:80px 0;
+}
+
+.faq-question{
+    padding:20px;
+}
+
+.faq-question h3{
+    font-size:18px;
+}
+
+.faq-answer{
+    padding:0 20px;
+}
+
+/* ========= Footer ========= */
+
+.footer{
+    padding:60px 0 20px;
+}
+
+.footer-grid{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.footer-logo{
+    justify-content:center;
+}
+
+.footer-col ul{
+    padding:0;
+}
+
+/* ========= Buttons ========= */
+
+.btn-primary,
+.btn-secondary{
+    width:100%;
+    text-align:center;
+}
+
+/* ========= Images ========= */
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+}
+
+/* ========= Small Phones ========= */
+
+@media (max-width:576px){
+
+.hero-content h1{
+    font-size:30px;
+}
+
+.section-title h2{
+    font-size:28px;
+}
+
+.hero-stats{
+    grid-template-columns:1fr;
+}
+
+.stats-grid{
+    grid-template-columns:1fr;
+}
+
+.logo{
+    font-size:20px;
+}
+
+.logo-img{
+    width:36px;
+    height:36px;
+}
+
+.hero-buttons a{
+    width:100%;
 }
 
 }

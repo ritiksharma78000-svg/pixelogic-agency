@@ -2726,3 +2726,92 @@ ul {
     white-space:nowrap;
 
 }
+/* ===========================
+      WHATSAPP FLOAT
+=========================== */
+
+.whatsapp-float{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:65px;
+
+    height:65px;
+
+    background:#25D366;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    box-shadow:0 12px 30px rgba(37,211,102,.35);
+
+    z-index:9999;
+
+    transition:.35s ease;
+
+    animation:whatsappPulse 2s infinite;
+
+}
+
+.whatsapp-float:hover{
+
+    transform:translateY(-6px) scale(1.08);
+
+}
+
+.whatsapp-float img{
+
+    width:34px;
+
+    height:34px;
+
+}
+
+@keyframes whatsappPulse{
+
+    0%{
+        box-shadow:0 0 0 0 rgba(37,211,102,.45);
+    }
+
+    70%{
+        box-shadow:0 0 0 18px rgba(37,211,102,0);
+    }
+
+    100%{
+        box-shadow:0 0 0 0 rgba(37,211,102,0);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .whatsapp-float{
+
+        width:58px;
+
+        height:58px;
+
+        right:18px;
+
+        bottom:18px;
+
+    }
+
+    .whatsapp-float img{
+
+        width:30px;
+
+        height:30px;
+
+    }
+
+}
